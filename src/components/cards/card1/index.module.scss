@@ -1,0 +1,135 @@
+@import '@styles/inc/components';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 32px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 12px;
+  margin-right: 12px;
+
+  &.mb {
+    margin-bottom: 24px;
+  }
+
+  @include media-breakpoint-down(md) {
+    max-width: 100%;
+    margin: 0 8px;
+  }
+
+  @include media-breakpoint-down(xxxxs) {
+    padding: 15px;
+  }
+}
+
+.iconClasss {
+  span {
+    font-size: 64px;
+    color: #9dc41a;
+
+    &::before {
+      margin: 0;
+    }
+  }
+}
+
+.cardIcon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 24px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: #4caf50;
+}
+
+.cardContent {
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  h6 {
+    margin-bottom: 24px;
+  }
+
+  p {
+    margin-bottom: 32px;
+    font-size: 18px;
+    font-weight: 400;
+
+    @include media-breakpoint-between(lg, xl) {
+      font-size: 16px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      font-size: 16px;
+    }
+  }
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 32px;
+
+  .learnMore {
+    color: #007d39 !important;
+    font-size: 18px !important;
+    text-decoration: none;
+    font-weight: 500 !important;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+    span {
+      color: #007d39;
+
+      @include media-breakpoint-down(xs) {
+        font-size: 16px;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      span {
+        color: #007d39;
+      }
+    }
+  }
+
+  img {
+    max-width: 100%;
+    width: auto;
+  }
+}
+
+.arrow {
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.equalContent {
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  ul li {
+    list-style: disc;
+    margin-inline-start: 28px;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

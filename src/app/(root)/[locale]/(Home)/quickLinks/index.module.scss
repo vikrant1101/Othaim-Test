@@ -1,0 +1,33 @@
+@import '@styles/inc/components';
+.quicklinkCon {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  p {
+    margin-bottom: 0;
+  }
+  h2 {
+    margin-bottom: 32px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 24px;
+    }
+  }
+  .quicklinksBtn {
+    gap: 24px;
+    padding: 24px 32px !important;
+    font-size: 24px !important;
+    max-height: initial !important;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 20px;
+    }
+    @include media-breakpoint-down(xxlg) {
+      font-size: 16px !important;
+      padding: 16px 28px !important;
+      gap: 12px;
+    }
+    @include media-breakpoint-down(md) {
+      margin-bottom: 16px;
+      justify-content: center;
+    }
+  }
+}

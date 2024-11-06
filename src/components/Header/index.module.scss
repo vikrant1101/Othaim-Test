@@ -1,0 +1,153 @@
+@import '@styles/inc/components';
+
+.mainCon {
+  z-index: 99;
+  position: relative;
+
+  .topheaderContainer {
+    background-color: #007d39;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    .storelocater {
+      max-width: 1608px;
+      width: 100%;
+      margin: 0 auto;
+
+      .langues {
+        display: flex;
+        align-items: center;
+
+        a {
+          color: #fff;
+        }
+      }
+
+      .Iktissab {
+        display: flex;
+        padding-left: 16px;
+        max-height: 40px;
+        font-weight: 600;
+      }
+    }
+
+    p {
+      margin-bottom: 0px;
+    }
+  }
+
+  .bottonHeader {
+    background-color: white;
+
+    .mbPadding {
+      @include media-breakpoint-down(xl) {
+        padding: 14px 0;
+      }
+    }
+
+    .menuList {
+      gap: 30px;
+
+      @include media-breakpoint-between(xl, lgmd) {
+        gap: 20px;
+      }
+
+      .menuListSub {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+        position: relative;
+
+        @include media-breakpoint-down(xl) {
+          display: none;
+        }
+
+        @include media-breakpoint-down(xxl) {
+          gap: 20px;
+        }
+
+        @include media-breakpoint-between(xl, lgmd) {
+          gap: 15px;
+        }
+
+        p {
+          margin-bottom: 0px;
+        }
+
+        a {
+          color: #000;
+          font-weight: 400;
+          font-size: 18px;
+
+          @include media-breakpoint-down(xxl) {
+            font-size: 16px;
+          }
+
+          @include media-breakpoint-between(xl, lgmd) {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .headerLogo {
+        @include media-breakpoint-between(xl, lgmd) {
+          max-width: 100px;
+        }
+      }
+    }
+
+    .buttonRightHeader {
+      gap: 48px;
+      align-items: center;
+      justify-content: flex-end;
+      position: relative;
+
+      @include media-breakpoint-down(md) {
+        gap: 24px;
+      }
+
+      .divider {
+        @include media-breakpoint-down(xl) {
+          display: none;
+        }
+      }
+
+      .menuMb {
+        display: none;
+
+        @include media-breakpoint-down(xl) {
+          display: block;
+        }
+      }
+
+      .flyer {
+        gap: 10px;
+        // margin-right: 16px!important;
+        margin-left: 16px !important;
+      }
+
+      a {
+        font-weight: 600;
+        font-size: 16px;
+      }
+
+      .IconSearch {
+        font-size: 32px;
+        color: #007D39;
+        cursor: pointer;
+
+        &::before {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.space {
+  gap: 16px;
+
+  @include media-breakpoint-down(md) {
+    gap: 8px;
+  }
+}

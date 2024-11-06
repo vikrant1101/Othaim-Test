@@ -1,0 +1,26 @@
+@import '@styles/inc/components';
+
+.searchMain {
+  position: absolute;
+  margin: 0 auto;
+  z-index: -9;
+  left: 0;
+  right: 0;
+  transform: translateY(-300%);
+  transition: transform 0.3s ease-in-out;
+
+  &.open {
+    transform: translateY(0);
+  }
+
+  .searchWrapper {
+    padding: 48px;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 0 60px 0 #ddd;
+
+    @include media-breakpoint-down(lg) {
+      padding: 25px;
+    }
+  }
+}

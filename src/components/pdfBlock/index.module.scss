@@ -1,0 +1,71 @@
+@import '@styles/inc/components';
+
+.downloadPdfBlock {
+  background-color: $white;
+  padding: 24px;
+  margin-bottom: 48px;
+  border: 1px solid $lightGrey;
+  transition: all 0.3s ease-in-out;
+  @include media-breakpoint-down(xxl) {
+    margin-bottom: 24px;
+  }
+  @include media-breakpoint-between(md, xxl) {
+    padding:12px;
+  }
+  @include media-breakpoint-down(sm) {
+    
+    padding: 12px;
+  }
+  &:hover {
+    background-color: $seaGreen;
+    .iconDownload {
+      &::before {
+        color: $white;
+      }
+    }
+    .iconPdf {
+      border-right-color: $white;
+      color: $white;
+    }
+    h6 {
+      &.fileName {
+        color: $white;
+      }
+    }
+  }
+  h6 {
+    &.fileName {
+      padding: 0 24px;
+      color: $darkGrey;
+      font-size: 18px;
+      line-height: 1.3;
+      @include media-breakpoint-between(md, xxl) {
+        font-size: 14px;
+        padding: 0 20px;
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: 14px;
+        padding: 0 24px;
+      }
+    }
+  }
+  .iconPdf {
+    color: $brightGreen;
+    font-size: 24px;
+    padding:2px 14px 2px 0;
+    border-right: 1px solid $lightGrey;
+    transition: all 0.3s ease-in-out;
+    @include media-breakpoint-down(xxl) {
+      font-size: 24px;
+      padding:0px 14px 0px 0;
+    }
+   
+  }
+  .iconDownload {
+    transition: all 0.3s ease-in-out;
+    font-size: 22px;
+    &::before {
+      color: $seaGreen;
+    }
+  }
+}

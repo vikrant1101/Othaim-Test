@@ -1,0 +1,85 @@
+@import "@styles/inc/components";
+
+.bannerMain {
+    padding: 0;
+
+    .bannerImg {
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .bannerContentMain {
+            padding: 81px 0 145px;
+
+            @include media-breakpoint-down(xxl) {
+                padding: 36px 0 100px;
+            }
+
+            @include media-breakpoint-between(md, lg) {
+                padding: 25px 0px 35px 45px;
+                padding-inline-start: 45px
+            }
+
+            @include media-breakpoint-down(md) {
+                padding: 33px 0 81px;
+            }
+
+            .bannerText {
+                color: #fff;
+                font-weight: 700;
+                margin-bottom: 24px;
+                line-height: 1.35;
+
+                @include media-breakpoint-between(md, lg) {
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                }
+
+                @include media-breakpoint-down(md) {
+                    margin-bottom: 16px;
+                    font-size: 18px;
+                    line-height: 1.56;
+                }
+            }
+
+            h1 {
+                color: #fff;
+                font-weight: 700;
+                margin-bottom: 32px;
+                line-height: 1.15;
+
+                @include media-breakpoint-down(xxl) {
+                    font-size: 45px;
+                    padding-right: 28px;
+                }
+
+                @include media-breakpoint-between(lg, xl) {
+                    font-size: 35px;
+                    margin-bottom: 30px;
+                }
+
+                @include media-breakpoint-between(xl, lgmd) {
+                    font-size: 38px;
+                    padding-right: 0;
+                }
+
+                @include media-breakpoint-between(md, lg) {
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                    padding-right: 40px;
+                }
+
+                @include media-breakpoint-down(md) {
+                    margin-bottom: 24px;
+                    font-size: 24px;
+                    max-width: 209px;
+                    line-height: 1.34;
+                }
+
+            }
+
+            .bannerBtn {
+                max-width: 151px;
+            }
+        }
+    }
+}

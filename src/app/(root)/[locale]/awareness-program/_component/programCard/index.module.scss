@@ -1,0 +1,36 @@
+@import '@styles/inc/components';
+.gap24 {
+  .mb24 {
+    margin-bottom: 24px;
+    @include media-breakpoint-between(md, lgmd) {
+      padding: 7px;
+    }
+  }
+
+  .cardCon {
+    padding: 32px;
+    height: 100%;
+    border: 1px solid var(--Support-Line, #ddd);
+    background: var(--Support-White, #fff);
+    @include media-breakpoint-between(md, lgmd) {
+      padding: 16px;
+    }
+    .iconClasss {
+      span {
+        font-size: 64px;
+        color: #9dc41a;
+        &::before {
+          margin: 0;
+        }
+      }
+    }
+    .cardTitle p {
+      margin-top: 24px;
+      margin-bottom: 0;
+    }
+    .description {
+      font-size: 18px;
+      margin-top: 24px;
+    }
+  }
+}

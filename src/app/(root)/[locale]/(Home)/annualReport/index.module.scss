@@ -1,0 +1,127 @@
+@import '@styles/inc/components';
+
+.annualReportMainCon {
+  @include media-breakpoint-down(md) {
+    padding-bottom: 100px;
+  }
+
+  .sliderWrapper {
+    @include media-breakpoint-down(md) {
+      margin-right: -24px;
+    }
+  }
+
+  .aboutCompanyCon {
+    background-color: white;
+    width: 100%;
+    margin-bottom: 64px;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      margin-bottom: 32px;
+
+      @include media-breakpoint-down(md) {
+        margin-bottom: 20px;
+      }
+    }
+
+    .description {
+      color: #007d39;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .paraGraph {
+      font-size: 18px;
+      font-weight: 400;
+      max-width: 96%;
+    }
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 32px;
+  max-width: 384px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 12px;
+
+  @include media-breakpoint-down(sm) {
+    max-width: 100%;
+  }
+
+  img {
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    margin: 0 8px;
+  }
+}
+
+.cardIcon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 24px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: #4caf50;
+}
+
+.cardContent {
+  text-align: left;
+
+  h6 {
+    margin-bottom: 24px;
+  }
+
+  p {
+    margin-bottom: 32px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 32px;
+
+  .learnMore {
+    color: #007d39 !important;
+    font-size: 18px !important;
+    text-decoration: none;
+    font-weight: 500 !important;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+    &:hover,
+    &:focus {
+      span {
+        color: #007d39;
+      }
+    }
+  }
+}
+
+.arrow {
+  margin-left: 8px;
+  font-size: 14px;
+}

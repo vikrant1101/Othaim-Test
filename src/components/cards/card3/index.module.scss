@@ -1,0 +1,76 @@
+@import '@styles/inc/components';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  max-width: 384px;
+  margin-inline-end: 48px;
+
+  @include media-breakpoint-down(md) {
+    max-width: 100%;
+    margin: 0 15px;
+  }
+
+  img {
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+  }
+
+  &.mb {
+    margin-bottom: 24px;
+  }
+
+  @include media-breakpoint-down(xl) {
+    // margin-right: 30px;
+  }
+
+  @include media-breakpoint-down(md) {
+    // margin-right: 30px;
+  }
+
+  .cardTile {
+    padding: 32px;
+
+    @include media-breakpoint-down(xxxxs) {
+      padding: 15px;
+    }
+
+    p {
+      margin-bottom: 0;
+      font-size: 18px;
+      font-weight: 700;
+
+      @include media-breakpoint-down(xxxxs) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .cardFooter {
+    padding: 24px 32px;
+
+    @include media-breakpoint-down(xxxxs) {
+      padding: 15px;
+    }
+
+    a {
+      font-size: 18px;
+      font-weight: 500;
+      gap: 10px;
+    }
+  }
+
+}
+
+.btnLink {
+
+  &:hover,
+  &:focus {
+    span {
+      color: #007d39;
+    }
+  }
+}

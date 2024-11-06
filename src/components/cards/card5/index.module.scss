@@ -1,0 +1,110 @@
+@import '@styles/inc/components';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  max-width: 384px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 12px;
+  margin-right: 12px;
+
+  @include media-breakpoint-down(md) {
+    max-width: 100%;
+  }
+
+  img {
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+  }
+
+  &.mb {
+    margin-bottom: 24px;
+  }
+}
+
+.cardIcon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 24px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: #4caf50;
+}
+
+.cardContent {
+  text-align: left;
+  padding: 32px;
+
+  @include media-breakpoint-down(xxl) {
+    padding: 20px;
+  }
+
+  h6 {
+    margin-bottom: 10px;
+
+    @include media-breakpoint-between(md, lg) {
+      font-size: 20px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      font-size: 20px;
+    }
+  }
+
+  p {
+    margin-bottom: 24px;
+    font-size: 18px;
+    font-weight: 400;
+
+    @include media-breakpoint-between(md, lg) {
+      font-size: 16px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      font-size: 16px;
+    }
+  }
+}
+
+.cardFooter {
+  margin-top: 32px;
+
+  img {
+    max-width: 100%;
+    width: auto;
+  }
+
+  .button {
+    font-size: 14px !important;
+    text-decoration: none;
+    font-weight: 500 !important;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    text-wrap: nowrap;
+    overflow: visible;
+
+    @include media-breakpoint-between(md, xxl) {
+      font-size: 12px !important;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 12px !important;
+    }
+
+  }
+}
+
+.arrow {
+  margin-left: 8px;
+  font-size: 14px;
+}

@@ -1,0 +1,20 @@
+.gap32 {
+  p{
+    color: white;
+  }
+  gap: 32px;
+  .langCon {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 32px;
+
+    .buton {
+      span {
+        font-size: 18px !important;
+        font-weight: 600;
+        color: white;
+      }
+    }
+  }
+}

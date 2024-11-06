@@ -1,0 +1,231 @@
+@import "@styles/inc/components";
+
+.shareTop {
+    background: #fff;
+    border-top: 4px solid #007D39;
+    margin-top: 96px;
+    padding: 48px;
+
+    @include media-breakpoint-between(lgmd, xxlg) {
+        padding: 25px;
+    }
+
+    @include media-breakpoint-between(xl, lgmd) {
+        padding: 30px;
+    }
+
+    @include media-breakpoint-between(lg, xl) {
+        padding: 20px;
+    }
+
+    @include media-breakpoint-between(md, lg) {
+        padding: 15px;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding: 32px;
+        margin-top: 48px;
+    }
+
+    .shareTitle {
+        @include media-breakpoint-down(md) {
+            margin-bottom: 8px;
+        }
+
+        @include media-breakpoint-between(md, lg) {
+            margin-bottom: 20px;
+        }
+
+        h5 {
+            margin-bottom: 16px;
+
+            @include media-breakpoint-between(lgmd, xxl) {
+                font-size: 28px;
+            }
+
+            @include media-breakpoint-between(xl, lgmd) {
+                font-size: 24px;
+            }
+
+            @include media-breakpoint-between(lg, xl) {
+                font-size: 22px;
+                margin-bottom: 10px;
+            }
+
+            @include media-breakpoint-between(md, lg) {
+                margin-bottom: 10px;
+            }
+        }
+
+        p {
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 16px;
+
+            @include media-breakpoint-between(xl, lgmd) {
+                font-size: 14px;
+            }
+
+            @include media-breakpoint-between(lg, xl) {
+                font-size: 13px;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+                font-size: 18px;
+
+                @include media-breakpoint-between(lg, lgmd) {
+                    font-size: 16px;
+                }
+
+                @include media-breakpoint-between(lg, xl) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .shareContent {
+        position: relative;
+        padding: 24px 0;
+
+        @include media-breakpoint-between(md, lg) {
+            padding: 0;
+        }
+
+        @include media-breakpoint-between(lg, xl) {
+            padding: 17px 0;
+        }
+
+        @include media-breakpoint-down(md) {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #DDDDDD;
+            padding: 16px 0;
+            align-items: center;
+        }
+
+
+
+        &.noBorder {
+            @include media-breakpoint-down(md) {
+                border-bottom: none;
+                padding-bottom: 0;
+            }
+        }
+
+        p {
+            margin-bottom: 8px;
+            font-size: 16px;
+
+            @include media-breakpoint-down(md) {
+                margin-bottom: 0;
+            }
+
+            @include media-breakpoint-between(md, lgmd) {
+                font-size: 14px;
+            }
+        }
+
+        h6 {
+            margin-bottom: 0;
+
+            @include media-breakpoint-down(md) {
+                font-size: 20px;
+            }
+
+            @include media-breakpoint-between(xxlg, xxl) {
+                font-size: 20px;
+            }
+
+            @include media-breakpoint-between(md, lgmd) {
+                font-size: 18px;
+            }
+
+        }
+    }
+
+    .shareIcon {
+        gap: 8px;
+
+        span {
+            color: #007D39;
+            font-size: 24px;
+            transition: transform 0.3s, color 0.3s;
+
+            @include media-breakpoint-between(md, lgmd) {
+                font-size: 18px;
+            }
+
+            &::before {
+                margin: 0;
+            }
+
+            &.redRotated {
+                color: #dc3545;
+                transform: rotate(180deg);
+            }
+
+            &.green {
+                color: #007D39;
+            }
+
+            &.red {
+                color: #dc3545;
+
+            }
+        }
+    }
+
+    .space {
+        padding-left: 35px;
+        padding-right: 35px;
+        border-left: 1px solid #DDDDDD;
+
+        @include media-breakpoint-between(xxl, xxxl) {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        @include media-breakpoint-between(xxlg, xxl) {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        @include media-breakpoint-between(lgmd, xxl) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        @include media-breakpoint-between(lg, lgmd) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        @include media-breakpoint-between(lg, xl) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        @include media-breakpoint-between(md, lg) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        @include media-breakpoint-down(md) {
+            width: 100%;
+            border: none;
+            padding: 0 15px;
+        }
+
+        &:last-child {
+            padding-right: 15px;
+        }
+
+        &:first-child {
+            @include media-breakpoint-between(md, lg) {
+                border-left: none;
+            }
+        }
+    }
+}

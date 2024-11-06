@@ -1,0 +1,46 @@
+@import '@styles/inc/components';
+
+.bgColor {
+  background-color: #f4f4f4;
+  .innerSpace {
+    padding-top: 96px;
+    padding-bottom: 64px;
+    @include media-breakpoint-down(md) {
+      padding-top: 48px;
+      padding-bottom: 16px;
+    }
+  }
+}
+.VisionCard {
+  margin-top: 48px;
+  p {
+    font-weight: 700;
+    @include media-breakpoint-between(md, lgmd) {
+      font-size: 16px !important;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    margin-top: 32px;
+    gap: 24px;
+    p {
+      font-size: 20px !important;
+    }
+  }
+}
+.bgImage {
+  img {
+    min-height: 260px;
+  }
+}
+.respectPrivacy {
+  margin-top: 64px;
+  @include media-breakpoint-down(md) {
+    margin-top: 8px;
+  }
+}
+.clientProtection {
+  margin-top: 64px;
+  @include media-breakpoint-down(md) {
+    margin-top: 32px;
+  }
+}

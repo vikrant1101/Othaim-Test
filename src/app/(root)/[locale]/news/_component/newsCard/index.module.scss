@@ -1,0 +1,124 @@
+@import "@styles/inc/components";
+
+.card {
+    margin-bottom: 24px;
+
+    @include media-breakpoint-down(md) {
+        display: flex;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .cardImage {
+        line-height: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 278px;
+        background-color: #F4F4F4;
+
+        @include media-breakpoint-down(md) {
+            height: 98px;
+        }
+
+        img {
+            width: 90px;
+
+            @include media-breakpoint-down(md) {
+                width: 51px;
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            width: 31%;
+        }
+    }
+
+    .newsCardBottom {
+        padding: 32px;
+        border: 1px solid #DDD;
+        border-top: none;
+
+
+        @include media-breakpoint-down(md) {
+            padding-right: 0;
+            padding-top: 0;
+            border: none;
+            width: 69%;
+        }
+
+        .newsCardDate {
+            gap: 16px;
+            align-items: center;
+            padding-bottom: 24px;
+
+            @include media-breakpoint-down(md) {
+                padding-bottom: 16px;
+            }
+
+            span {
+                color: #9DC41A;
+                font-size: 25px;
+                line-height: normal;
+
+                &::before {
+                    margin: 0;
+                }
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+
+        .newsTitle {
+            h6 {
+                margin-bottom: 24px;
+
+                @include media-breakpoint-down(md) {
+                    font-size: 18px;
+                    margin-bottom: 16px;
+                }
+            }
+        }
+
+        .readMoreTop {
+            margin-top: 24px;
+
+            @include media-breakpoint-down(md) {
+                margin-top: 0;
+            }
+
+            .readMore {
+                color: #007d39 !important;
+                font-size: 18px !important;
+                text-decoration: none;
+                font-weight: 500 !important;
+                display: inline-flex;
+                align-items: center;
+                width: 100%;
+                justify-content: space-between;
+
+                @include media-breakpoint-down(md) {
+                    justify-content: inherit;
+                }
+
+                span {
+                    color: #007d39;
+                }
+
+                &:hover,
+                &:focus {
+                    span {
+                        color: #007d39;
+                    }
+                }
+            }
+        }
+
+        .divider {
+            @include media-breakpoint-down(md) {
+                display: none;
+            }
+        }
+    }
+}

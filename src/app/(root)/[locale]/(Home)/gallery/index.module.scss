@@ -1,0 +1,114 @@
+@import '@styles/inc/components';
+
+.galleryMain {
+  padding: 64px 0 76px 0;
+
+  @include media-breakpoint-down(md) {
+    padding: 48px 0 32px;
+  }
+
+  .readLatestCon {
+    padding-bottom: 64px;
+
+    @include media-breakpoint-down(md) {
+      padding-bottom: 32px;
+    }
+
+
+    .learnMoreCon {
+      display: flex;
+      padding: 0 15px;
+      justify-content: end;
+
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+
+    h2 {
+      margin-bottom: 32px;
+
+      @include media-breakpoint-down(md) {
+        margin-bottom: 24px;
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 18px;
+
+      @include media-breakpoint-down(xs) {
+        font-size: 16px;
+      }
+    }
+
+    p:last-child {
+      margin: 0;
+    }
+  }
+
+  .buton {
+    span {
+      color: #9dc41a;
+      font-size: 24px;
+
+      &::before {
+        margin: 0;
+      }
+    }
+  }
+
+  .learnMoreConMd {
+    display: none;
+
+    @include media-breakpoint-down(md) {
+      display: flex;
+      justify-content: center;
+      margin-top: 76px;
+    }
+  }
+
+  .gallerySlider {
+    @include media-breakpoint-down(md) {
+      margin-right: -24px;
+      margin-left: 24px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      margin-left: 15px;
+    }
+  }
+
+  .mobArrow {
+    @include media-breakpoint-down(md) {
+      display: flex !important;
+      margin-top: 23px;
+    }
+
+    span {
+      @include media-breakpoint-down(xs) {
+        font-size: 35px !important;
+      }
+
+      &::before {
+        @include media-breakpoint-down(md) {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  ul {
+    @include media-breakpoint-down(md) {
+      z-index: 9999;
+      max-width: 112px;
+      margin: 0px auto !important;
+      position: relative !important;
+      left: -24px;
+
+      @include media-breakpoint-down(xxs) {
+        left: -19px;
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+@import '@styles/inc/components';
+
+.socialMain {
+    padding-top: 128px;
+    padding-bottom: 171px;
+    position: relative;
+    margin-top: 64px;
+
+    @include media-breakpoint-between(lg, xxl) {
+        padding-top: 80px;
+        padding-bottom: 120px;
+
+    }
+
+    @include media-breakpoint-between(md, lg) {
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding-top: 48px;
+        padding-bottom: 100px;
+    }
+
+    &::after {
+        content: '';
+        background-color: #9DC41A;
+        height: 440px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+
+        @include media-breakpoint-down(md) {
+            height: 340px;
+        }
+
+        @include media-breakpoint-down(xxxxs) {
+            height: 290px;
+        }
+    }
+
+    .sociaText {
+        h2 {
+            margin-bottom: 0;
+        }
+    }
+
+    .socialCardMain {
+        .socialCard {
+            margin: 0 12px;
+            max-width: 384px;
+
+            @include media-breakpoint-down(lg) {
+                max-width: 100%;
+            }
+
+            img {
+                @include media-breakpoint-down(lg) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .socialWrapperSlider {
+        margin-top: 64px;
+
+        @include media-breakpoint-down(lg) {
+            margin-top: 32px;
+        }
+
+        @include media-breakpoint-down(md) {
+            margin-right: -24px;
+        }
+    }
+}

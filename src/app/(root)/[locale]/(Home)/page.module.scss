@@ -1,0 +1,117 @@
+// career
+// .imageCon{
+// position: relative;
+// }
+
+// bgimage
+
+// card
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 32px;
+  width: 384px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  @include media-breakpoint-down(sm) {
+    max-width: 100%;
+  }
+  img{
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+}
+
+.cardIcon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 24px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: #4caf50;
+}
+
+.cardContent {
+  text-align: left;
+
+  h6 {
+    margin-bottom: 24px;
+  }
+
+  p {
+    margin-bottom: 32px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 32px;
+  .learnMore {
+    color: #007d39 !important;
+    font-size: 18px !important;
+    text-decoration: none;
+    font-weight: 500 !important;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.arrow {
+  margin-left: 8px;
+  font-size: 14px;
+}
+// lattest card
+.cardContainer {
+  padding: 0;
+  margin: 0;
+}
+.cardl {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 480px;
+  text-align: start;
+  transition: transform 0.3s ease;
+  position: relative;
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.cardImagel {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cardContentl {
+  padding: 40px;
+  position: absolute;
+  bottom: 0;
+}
+
+.datel {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.titlel {
+  color: #fff;
+  margin-bottom: 24px;
+}

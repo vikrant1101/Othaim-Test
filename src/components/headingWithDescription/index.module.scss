@@ -1,0 +1,23 @@
+@import '@styles/inc/components';
+.aboutCompanyCon {
+  width: 100%;
+  ul,
+  p,
+  h2 {
+    margin-bottom: 32px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @include media-breakpoint-down(md) {
+      margin-bottom: 24px;
+    }
+  }
+  .paraGraph {
+    font-size: 18px;
+    font-weight: 400;
+    ul li {
+      list-style: disc;
+     margin-inline-start: 28px;
+    }
+  }
+}

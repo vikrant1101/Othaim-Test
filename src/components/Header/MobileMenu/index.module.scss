@@ -1,0 +1,30 @@
+@import '@styles/inc/components';
+.mobilemenu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 24px;
+  background-color: white;
+  height: auto;
+  width: 100%;
+  z-index: 9999;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  &.arTransition {
+    transform: translateX(-100%) !important;
+  }
+  &.open {
+    transform: translateX(0);
+  }
+  .mobileMenuCon {
+    flex-direction: column;
+    gap: 48px;
+    .language {
+      span {
+        color: #404040 !important;
+      }
+    }
+  }
+}

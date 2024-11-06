@@ -1,0 +1,18 @@
+.notFoundTextAlign {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  h5,
+  h3,
+  p {
+    margin-bottom: 0;
+  }
+  .h5 {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .notFoundTitle {
+    font-size: 96px;
+    color: #e30613;
+  }
+}

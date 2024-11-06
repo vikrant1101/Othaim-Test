@@ -1,0 +1,66 @@
+@import '@styles/inc/components';
+
+.modalWrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  overflow-y: auto;
+  .modalOverlay {
+    background: $black_transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .modalTbl {
+    display: table;
+    width: 100%;
+    height: 100%;
+    .modalTblCel {
+      display: table-cell;
+      vertical-align: middle;
+      .modalWrap {
+        position: relative;
+        margin: 35px 0;
+        .modalCol {
+          background-color: $white;
+          border-radius: 10px;
+          max-width: 510px;
+          margin: 0 auto;
+          padding: 30px;
+          position: relative;
+          .closeBtn {
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            position: absolute;
+            right: 22px;
+            top: 22px;
+            line-height: 1.5;
+            @include media-breakpoint-down(xs) {
+              right: 10px;
+              top: 10px;
+            }
+            span {
+              color: $darkGrey;
+              line-height: 1;
+              font-size: 15px;
+            }
+          }
+          h6 {
+            margin-bottom: 10px;
+          }
+          .telModelDesc {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

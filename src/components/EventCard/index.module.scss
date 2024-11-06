@@ -1,0 +1,53 @@
+@import '@styles/inc/components';
+.eventCard{
+    padding: 32px;
+    border:1px solid $lightGrey;
+    border-bottom: 4px solid $seaGreen;
+    gap: 24px;
+    display: flex;
+    flex-flow: column;
+    h4 {
+        margin: 0;
+        &.heading {
+            font-size: 24px;
+            line-height: 1.3;
+            color: $darkGrey;
+        }
+    }
+    .dateBadge{
+        border-bottom: 1px solid $lightGrey;
+        margin-left: 0px;
+        padding-bottom: 24px;
+        i {
+            &::before{
+                font-size: 24px;
+                color: $brightGreen;
+                margin: 0;
+            }
+        }
+        .badge{
+            padding: 8px 15px 8px 22px;
+            border:1px solid $lightGrey;
+            border-radius: 50px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            color: $darkGrey;
+            font-size: 14px;
+            line-height: 1.5;
+            justify-content: center;
+            &::before{
+                content:"";
+                position: relative;
+                background-color: $brightGreen;
+                height: 6px;
+                width: 6px;
+                border-radius: 3px;
+                left: -10px;
+                top: 0;
+                bottom: 0;
+            }
+        }
+    }
+    
+}

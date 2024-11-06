@@ -1,0 +1,54 @@
+@import "./inc/components"; 
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-family: var(--body-font); 
+    line-height: var(--body-line-height);
+    color: var(--dark-grey);
+    text-align: left;
+    &.hidden {
+        @include media-breakpoint-down(md) {
+            overflow: hidden;
+            touch-action: none;
+            -ms-touch-action: none;
+        }
+    } 
+    a {
+        @include transvalue(transition, all 0.3s);
+    } 
+    .slick-slide {
+        img {
+            max-width: 100%;
+        }
+            position: relative;
+    } 
+}
+hr {
+    background-color: $lightGrey;
+    border: none;
+    height: 1px;
+}   
+[class^="icon-"],
+[class*="icon-"] {
+    &:before {
+        width: auto !important;
+        margin: 0px !important;
+    }
+}
+.btnWrap {
+    margin-bottom: 0px;
+    .btn {
+        @include btnprimary;
+    } 
+}
+sup {
+    font-size: 70%;
+    margin-top: -0.5em;
+} 
+div[id^="__lpform_"] {
+    display: none;
+}

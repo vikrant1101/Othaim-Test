@@ -1,0 +1,94 @@
+@import '@styles/inc/components';
+.socialSharePanel{
+    margin-top: 50px;
+    @include media-breakpoint-down(xl) {
+        margin-top: 30px;
+    }
+    @include media-breakpoint-down(md) {
+        margin-top: 0;
+        justify-content: space-between;
+    }
+    @include media-breakpoint-down(xxs) {
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    h6{
+        @include media-breakpoint-down(xl) {
+            font-size: 18px;
+        }
+    }
+    .icon{
+        a {
+            height: 48px;
+            width: 48px;
+            font-size: 40px;
+            background-color: $seaGreen;
+            border-radius: 50%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include media-breakpoint-between(md, xl) {
+                height: 40px;
+                width: 40px;
+                font-size: 30px;
+            }
+            @include media-breakpoint-down(sm) {
+                height: 40px;
+                width: 40px;
+                font-size: 30px;
+            }
+            &::before{
+                font-size: 50px;
+                color: $white;
+                @include media-breakpoint-between(md, xl) {
+                    font-size: 36px;
+                }
+                @include media-breakpoint-down(sm) {
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+    .printPanel{
+        border-left: 1px solid $lightGrey;
+        padding-left: 16px;
+        a {
+            height: 48px;
+            width: 48px;
+            background-color: $white;
+            border-radius: 50%;
+            margin: 0;
+            border:3px solid $seaGreen;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &::before{
+                font-size: 24px;
+                color: $seaGreen;
+                @include media-breakpoint-between(md, xl) {
+                    font-size: 18px;
+                }
+                @include media-breakpoint-down(sm) {
+                    font-size: 18px;
+                }
+            }
+            @include media-breakpoint-between(md, xl) {
+                height: 40px;
+                width: 40px;
+            }
+            @include media-breakpoint-down(sm) {
+                height: 40px;
+                width: 40px;
+            }
+
+        }
+    }
+    h6 {
+        margin: 0;
+        padding: 0;
+    }
+}

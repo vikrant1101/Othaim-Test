@@ -1,0 +1,239 @@
+@import '@styles/inc/components';
+
+.ourHistoryMainCon {
+  background-color: #f4f4f4;
+  overflow: hidden;
+  padding-top: 135px;
+
+  @include media-breakpoint-down(lg) {
+    padding-top: 70px;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding-bottom: 100px !important;
+    padding-top: 48px;
+  }
+
+  .styleAr {
+    min-width: 0;
+    overflow-x: visible;
+    margin-left: -650px;
+    margin-right: -15px;
+    position: relative;
+
+    @include media-breakpoint-down(md) {
+      margin-left: -24px;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-left: -22px;
+    }
+  }
+
+  .styleEn {
+    min-width: 0;
+    overflow-x: visible;
+    margin-right: -760px;
+    position: relative;
+
+    @include media-breakpoint-between(md, lg) {
+      margin-right: -660px;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-right: -24px;
+      margin-left: 0;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-right: -22px;
+    }
+  }
+
+  .slick-list {
+    padding-right: 15% !important;
+  }
+
+
+
+  .sliderButtonCon {
+    display: flex;
+    flex-direction: column;
+    max-width: 381px;
+
+    @include media-breakpoint-between(md, lg) {
+      flex-direction: row;
+      max-width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @include media-breakpoint-down(md) {
+      max-width: 100%;
+    }
+
+    h2 {
+      max-width: 78%;
+      margin-bottom: 32px;
+
+      @include media-breakpoint-down(md) {
+        max-width: unset;
+        margin-bottom: 24px;
+      }
+    }
+
+    p {
+      margin-bottom: 32px;
+      font-size: 24px;
+
+      @include media-breakpoint-between(xl, xxl) {
+        font-size: 18px;
+      }
+
+      @include media-breakpoint-between(md, lg) {
+        font-size: 20px;
+      }
+
+      @include media-breakpoint-between(lg, xl) {
+        font-size: 16px;
+      }
+
+      @include media-breakpoint-down(md) {
+
+        margin-bottom: 48px;
+      }
+
+      @include media-breakpoint-down(xs) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .cardConMain {
+    display: flex !important;
+    flex-direction: column;
+    gap: 32px;
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column-reverse;
+      gap: 48px;
+    }
+  }
+
+  .ellipseCon {
+    text-align: center;
+
+    @include media-breakpoint-down(md) {
+      text-align: start;
+      margin: 0 15px;
+    }
+
+    p {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: #000;
+      max-width: 384px;
+
+      @include media-breakpoint-down(md) {
+        margin-bottom: 0;
+        display: none;
+      }
+    }
+
+    .ellipsImageCon {
+      background: #dedede;
+      text-align: center;
+
+      @include media-breakpoint-down(md) {
+        background: linear-gradient(90deg, #dfdfdf 63.77%, #f4f4f4 100.84%);
+      }
+    }
+  }
+}
+
+.loadingbar {
+  @include media-breakpoint-up(md) {
+    background: #dedede;
+    height: 16px;
+    border-radius: 100px;
+    // display: flex;
+    justify-content: space-evenly; // Equal space between bullets
+    align-items: center;
+    position: relative;
+  }
+
+  @include media-breakpoint-down(md) {
+    margin-left: 4px;
+  }
+}
+
+.loadingbarbulletMain {
+  @include media-breakpoint-down(md) {
+    background: linear-gradient(90deg, #DFDFDF 63.77%, #F4F4F4 100.84%);
+    height: 16px;
+    position: relative;
+    border-radius: 100px;
+  }
+
+
+
+}
+
+.loadingWidth {
+  max-width: 384px;
+  position: relative;
+}
+
+.statsYear {
+  display: inline-block;
+
+  p {
+    display: none;
+
+    @include media-breakpoint-down(md) {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: #000;
+      display: block;
+    }
+  }
+}
+
+.loadingbarbullet {
+  &:after {
+    content: '';
+    position: absolute;
+    width: 12px !important;
+    height: 12px;
+    background-color: #9DC41A;
+    border-radius: 50%; // Circle shape
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+    cursor: pointer;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -2px;
+
+    @include media-breakpoint-down(lg) {
+      margin-top: -1px;
+    }
+
+    @include media-breakpoint-down(md) {
+      left: 6px;
+      margin-top: 0px;
+    }
+  }
+
+  &.slick-current {
+    width: 18px;
+    height: 18px;
+    border-width: 3px;
+    margin-left: -9px; // Adjust alignment
+  }
+}

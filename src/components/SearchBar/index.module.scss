@@ -1,0 +1,182 @@
+@import '@styles/inc/components';
+
+.searchWrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid $lightGrey2;
+    padding: 16px 24px;
+    background-color: $white;
+    height: 60px;
+
+    @include media-breakpoint-down(md) {
+        padding: 15px;
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+
+        .searchInput {
+            padding: 0;
+            color: $darkGrey;
+            font-size: 16px;
+            line-height: 1.5;
+            border: 0;
+            padding-right: 10px;
+            width: 100%;
+            height: auto;
+            background-color: $white;
+            font-weight: 400;
+
+            @include media-breakpoint-between(md, lgmd) {
+                font-size: 14px;
+            }
+
+            @include media-breakpoint-down(xs) {
+                font-size: 14px;
+            }
+
+            &:-webkit-autofill {
+                -webkit-box-shadow: 0 0 0 30px $white inset !important;
+            }
+
+            &::placeholder {
+                color: $darkGrey;
+                font-size: 16px;
+                font-weight: 400;
+
+                @include media-breakpoint-between(md, lgmd) {
+                    font-size: 14px;
+                }
+
+                @include media-breakpoint-down(xs) {
+                    font-size: 14px;
+                }
+            }
+
+            &:-ms-input-placeholder {
+                color: $darkGrey;
+                font-size: 16px;
+
+                @include media-breakpoint-between(md, lg) {
+                    font-size: 14px;
+                }
+
+                @include media-breakpoint-down(xs) {
+                    font-size: 14px;
+                }
+            }
+
+            &::-ms-input-placeholder {
+                color: $darkGrey;
+                font-size: 16px;
+
+                @include media-breakpoint-between(md, lg) {
+                    font-size: 14px;
+                }
+
+                @include media-breakpoint-down(xs) {
+                    font-size: 14px;
+                }
+            }
+
+            &:hover {
+                outline: none;
+            }
+
+            &:focus {
+                color: $black;
+                outline: none;
+            }
+
+            &:disabled {
+                cursor: default;
+                background-color: transparent;
+                color: $darkGrey;
+                border-color: 0;
+            }
+        }
+
+        .searchBtn {
+            background-color: transparent;
+            border: 0;
+            padding: 0;
+            cursor: pointer;
+
+            &:focus-visible {
+                outline: 1px dotted $black;
+            }
+
+            span {
+                font-size: 19px;
+                color: $seaGreen;
+
+                @include media-breakpoint-between(md, lgmd) {
+                    font-size: 16px;
+                }
+
+                @include media-breakpoint-down(xs) {
+                    font-size: 16px;
+                }
+            }
+
+            &:disabled {
+                cursor: not-allowed;
+            }
+        }
+
+        .loaderOnSearch {
+            position: relative;
+            left: auto;
+            right: -4px;
+            top: 2px;
+            width: 19px;
+        }
+    }
+}
+
+.popupWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $white;
+    @include transvalue(transition, height 0.3s ease);
+    overflow: hidden;
+    height: 0;
+    z-index: 9;
+
+    @include media-breakpoint-down(md) {
+        top: -16px;
+    }
+
+    .searchCol {
+        position: relative;
+
+        .popupCloseIcon {
+            position: absolute;
+            right: 0;
+            top: -30px;
+
+            span {
+                color: $seaGreen;
+                font-size: 14px;
+            }
+        }
+    }
+
+    &.modalShow {
+        height: 110px;
+        padding: 40px 25px 15px;
+
+        @include media-breakpoint-down(xs) {
+            padding: 40px 15px 10px;
+        }
+    }
+}

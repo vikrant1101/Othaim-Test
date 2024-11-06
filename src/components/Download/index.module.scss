@@ -1,0 +1,17 @@
+@import '@styles/inc/components';
+
+.downloadIcon{
+    color: $seaGreen;
+    a{
+        color: $seaGreen;
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: 500;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        &::before{
+            font-size: 24px;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@import '@styles/inc/components';
+.aboutCompany {
+  .reverse {
+    flex-direction: row-reverse;
+    @include media-breakpoint-down(lg) {
+      flex-direction: column-reverse;
+    }
+  }
+  .gap24 {
+    gap: 0;
+    @include media-breakpoint-down(lg) {
+      gap: 24px;
+    }
+  }
+  &.descriptionCon {
+    max-width: 90%;
+  }
+  img {
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+    }
+  }
+}

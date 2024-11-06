@@ -1,0 +1,152 @@
+$ft_h1: 62px;
+$ft_h2: 54px;
+$ft_h3: 48px;
+$ft_h4: 36px;
+$ft_h5: 30px;
+$ft_h6: 24px;
+
+@mixin font-sizes-h1 {
+	font-size: $ft_h1;
+	line-height: 1.2;
+
+	@include media-breakpoint-down(lgmd) {
+		font-size: 42px;
+	}
+
+	@include media-breakpoint-down(xl) {
+		font-size: 40px;
+	}
+
+	@include media-breakpoint-down(lg) {
+		font-size: 32px;
+	}
+
+	@include media-breakpoint-down(md) {
+		font-size: 36px;
+	}
+
+	@include media-breakpoint-down(xs) {
+		font-size: 30px;
+	}
+
+	@include media-breakpoint-down(xxs) {
+		font-size: 28px;
+	}
+
+	@include media-breakpoint-down(xxxs) {
+		font-size: 24px;
+	}
+}
+
+@mixin font-sizes-h2 {
+	font-size: $ft_h2;
+	line-height: 1.16;
+
+	@include media-breakpoint-down(xxl) {
+		font-size: 50px;
+	}
+
+	@include media-breakpoint-down(lgmd) {
+		font-size: 40px;
+	}
+
+	@include media-breakpoint-down(lg) {
+		font-size: 35px;
+	}
+
+	@include media-breakpoint-down(smd) {
+		font-size: 48px;
+	}
+
+	@include media-breakpoint-down(sm) {
+		font-size: 36px;
+	}
+
+	@include media-breakpoint-down(xs) {
+		font-size: 30px;
+	}
+
+	@include media-breakpoint-down(xxs) {
+		font-size: 28px;
+	}
+
+	@include media-breakpoint-down(xxxs) {
+		font-size: 24px;
+	}
+}
+
+@mixin font-sizes-h3 {
+	font-size: $ft_h3;
+	line-height: 1.2;
+
+	@include media-breakpoint-down(lgmd) {
+		font-size: 40px;
+	}
+
+	@include media-breakpoint-down(xl) {
+		font-size: 36px;
+	}
+
+	@include media-breakpoint-down(xxs) {
+		font-size: 30px;
+	}
+
+	@include media-breakpoint-down(xxxs) {
+		font-size: 24px;
+	}
+}
+
+@mixin font-sizes-h4 {
+	font-size: $ft_h4;
+	line-height: 1.2;
+
+	@include media-breakpoint-down(xxl) {
+		font-size: 30px;
+	}
+
+	@include media-breakpoint-down(xxlg) {
+		font-size: 28px;
+	}
+
+	@include media-breakpoint-down(md) {
+		font-size: 30px;
+	}
+
+	@include media-breakpoint-down(xs) {
+		font-size: 24px;
+	}
+
+	@include media-breakpoint-down(xxs) {
+		font-size: 18px;
+	}
+
+	@include media-breakpoint-down(xxxs) {
+		font-size: 16px;
+	}
+}
+
+@mixin font-sizes-h5 {
+	font-size: $ft_h5;
+	line-height: 1.2;
+
+	@include media-breakpoint-down(xxs) {
+		font-size: 20px;
+	}
+
+	@include media-breakpoint-down(xxxs) {
+		font-size: 18px;
+	}
+}
+
+@mixin font-sizes-h6 {
+	font-size: $ft_h6;
+	line-height: 1.2;
+
+	@include media-breakpoint-down(xs) {
+		font-size: 18px;
+	}
+
+	@include media-breakpoint-down(xxxs) {
+		font-size: 16px;
+	}
+}

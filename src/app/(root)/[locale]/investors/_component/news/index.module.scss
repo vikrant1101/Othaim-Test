@@ -1,0 +1,42 @@
+@import "@styles/inc/components";
+
+.newsCard {
+    background-color: #fff;
+    border-bottom: 4px solid #007D39;
+    padding: 32px;
+    max-width: 520px;
+    margin: 0 12px;
+
+    @include media-breakpoint-down(md) {
+        max-width: 100%;
+    }
+
+    .space {
+        margin: 0 12px;
+    }
+
+    .newsCardTop {
+        gap: 16px;
+        align-items: center;
+        padding-bottom: 24px;
+
+        span {
+            color: #9DC41A;
+            font-size: 25px;
+            line-height: normal;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .newsCardBottom {
+        padding-top: 24px;
+
+        p {
+            margin-bottom: 0;
+            font-weight: 600;
+        }
+    }
+}

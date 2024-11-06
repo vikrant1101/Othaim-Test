@@ -1,0 +1,61 @@
+$breakpoints: (
+    ) !default;
+$breakpoints: map-merge($breakpoints,
+        (xxxs: 319.98px,
+            xxxxs: 359.98px,
+            xxs: 374.98px,
+            xs: 413.98px,
+            sm: 479.98px,
+            smd:576.98px,
+            md: 767.98px,
+            lg: 991.98px,
+            xl: 1199.98px,
+            lgmd: 1299.98px,
+            xxlg: 1399.98px,
+            xxl: 1599.98px,
+            xxxl: 1749.98px,
+            xxxxl: 1850.98px,
+        )
+);
+$LexendDeca: "Lexend-Regular";
+$LexendDecaMedium: "Lexend-Medium";
+$LexendDecaSemibold: "Lexend-Semibold";
+$LexendDecaBold: "Lexend-Bold";
+$fontello: 'fontello', sans-serif;
+$offWhite: #f4f4f4;
+$white: #ffffff;
+$darkGrey: #404040;
+$darkGrey1: #808080;
+$black: #000000;
+$purpleColor: #793dd6;
+$darkPurple: #33005A;
+$lightPurple: #D5C4EC;
+$lightPurple1: #3B0E66;
+$lightPurple2 :#60269E;
+$lightPurple3 :#BAA7CF;
+$lightGrey: #dddddd;
+$lightGrey1: #f1ede6;
+$lightGrey2: #d7d2c8;
+$lightGrey3: #eeeeee;
+$lightGrey4: #adadad;
+$lightGrey5: #F1ECE6;
+$seaGreen: #007D39;
+$darkSeaGreen: #007C39;
+$lighSeaGreen: #C3E2BA;
+$brightGreen: rgb(157, 196, 26);
+$yellow: #EFC91A;
+$red: #DD2229;
+$successColor: #008000;
+$transparent: rgba(255, 255, 255, 0.9);
+$transparent1: rgba(157, 196, 26, 0.2);
+$transparent2: rgba(157, 196, 26, 0.5);
+$transparent3: rgba(157, 196, 26, 0.7);
+$transparent4: rgba(255, 255, 255, 0.99);
+$transparent5: rgba(242, 237, 230, 0.80);
+$black_transparent: rgba(0, 0, 0, 0.8);
+$black_transparent_v2: rgba(0, 0, 0, 0.2);
+$black_transparent_v3: rgba(0, 0, 0, 0.25);
+$gradient1: rgba(0, 0, 0, 0.6);
+$gradient2: rgba(0, 0, 0, 0);
+$shadowColor: rgba(0, 0, 0, 0.13);
+$shadowColor2: 0 0 10px 0 rgba(0, 0, 0, 0.1);

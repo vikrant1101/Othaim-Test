@@ -1,0 +1,151 @@
+@import '@styles/inc/components';
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+
+  @include media-breakpoint-down(xxl) {
+    gap: 20px;
+  }
+
+  @include media-breakpoint-between(xl, lgmd) {
+    gap: 15px;
+  }
+
+  p {
+    margin-bottom: 0px;
+  }
+
+  a {
+    color: #000;
+    font-weight: 400;
+    font-size: 18px;
+
+    @include media-breakpoint-down(xxl) {
+      font-size: 16px;
+    }
+
+    @include media-breakpoint-between(xl, lgmd) {
+      font-size: 14px;
+    }
+  }
+}
+
+.menuItem {
+  position: relative;
+}
+
+.menuButton {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  padding: 30px 0;
+  font-size: 18px;
+  line-height: 28px;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    span {
+      rotate: 180deg;
+    }
+  }
+
+  span {
+    font-size: 24px;
+    @include transvalue(transition, all 0.3s);
+
+    &::before {
+      margin: 0;
+    }
+  }
+}
+
+.menuButton {
+  &.menuopen {
+    &:after {
+      position: absolute;
+      background-color: #007d39;
+      height: 5px;
+      width: 100%;
+      bottom: 0;
+      content: '';
+    }
+
+    span {
+      rotate: 180deg;
+    }
+  }
+  &.active {
+    &:after {
+      position: absolute;
+      background-color: #007d39;
+      height: 5px;
+      width: 100%;
+      bottom: 0;
+      content: '';
+    }
+  }
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  display: none;
+  list-style: none;
+  padding: 0;
+  padding: 24px;
+}
+
+.submenu.open {
+  display: block;
+}
+
+.submenu li {
+  padding: 16px 0;
+  border-bottom: 1px solid #ddd;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+.submenu li a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  gap: 16px;
+  width: 336px;
+  align-items: center;
+}
+
+.imageCon {
+  > [class*='icon'] {
+    padding: 12px 15px !important;
+    border: 1px solid #ddd !important;
+    color: #9dc41a;
+  }
+}
+
+.submenu li a:hover,
+.submenu li a:focus {
+  color: #007d39;
+}

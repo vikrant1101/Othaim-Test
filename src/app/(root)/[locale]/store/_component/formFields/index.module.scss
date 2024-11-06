@@ -1,0 +1,36 @@
+@import '@styles/inc/components';
+
+.searchCons{
+  background-color: #f4f4f4;
+  padding: 24px;
+  margin-bottom: 48px;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 24px;
+  }
+.gap30 {
+  @include media-breakpoint-down(md) {
+    gap: 30px;
+  }
+  .gap20 {
+    @include media-breakpoint-down(md) {
+      gap: 20px;
+    }
+  }
+}}
+.storeCardsCon {
+  padding: 48px 0 96px 0;
+  display: flex;
+  flex-wrap: wrap;
+  @include media-breakpoint-down(md) {
+    padding: 24px 0 48px 0;
+  }
+  .buton {
+    margin-top: 24px;
+    @include media-breakpoint-down(md) {
+      margin-top: 0;
+    }
+  }
+  .loadMoreCon {
+    margin-top: 16px;
+  }
+}

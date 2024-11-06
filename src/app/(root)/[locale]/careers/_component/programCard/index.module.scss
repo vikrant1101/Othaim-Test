@@ -1,0 +1,24 @@
+@import '@styles/inc/components';
+
+.programCard {
+  margin-bottom: 32px;
+  .cardCon {
+    padding: 32px;
+    height: 100%;
+    border-bottom: 4px solid var(--Primary-Dark-Green, #007d39);
+    background: var(--Support-White, #fff);
+    @include media-breakpoint-down(xl) {
+      margin-bottom: 24px;
+    }
+    .cardTitle p {
+      font-weight: 700;
+      font-size: 18px;
+      margin-top: 24px;
+      margin-bottom: 0;
+    }
+    .description {
+      font-size: 18px;
+      margin-top: 24px;
+    }
+  }
+}

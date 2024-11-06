@@ -1,0 +1,50 @@
+@import '@styles/inc/components';
+.faq {
+  padding-top: 96px;
+  padding-bottom: 64px;
+
+  @include media-breakpoint-down(lg) {
+    padding: 60px 0;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding-top: 32px;
+    padding-bottom: 48px;
+  }
+
+  .accordionItems {
+    padding-bottom: 32px !important;
+    margin-bottom: 32px !important;
+    span {
+      height: 48px;
+      width: 48px;
+      border-radius: 50%;
+      border: 1px solid #ddd;
+      position: relative;
+      &::before {
+        font-size: 48px;
+        position: absolute;
+        margin: 0;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: #007d39;
+      }
+    }
+    p {
+      margin-bottom: 0 !important;
+      max-width: 96%;
+    }
+    h6 {
+      font-size: 30px;
+      @include media-breakpoint-down(md) {
+        font-size: 24px;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      padding-bottom: 24x !important;
+      margin-bottom: 24px !important;
+    }
+  }
+}

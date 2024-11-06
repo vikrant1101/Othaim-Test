@@ -1,0 +1,21 @@
+@import '@styles/inc/components';
+.sliderPadding {
+  padding-bottom: 144px;
+  .cardConMain {
+    display: flex !important;
+    flex-direction: column;
+    gap: 48px;
+
+    @include media-breakpoint-down(md) {
+      gap: 32px;
+    }
+  }
+
+  .divider {
+    padding: 64px 0 48px 0;
+  }
+}
+.historySlider{
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,21 @@
+@import '@styles/inc/components';
+
+.textoverflowouter {
+  overflow: hidden;
+}
+
+.textoverflowinner {
+  white-space: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  width: 100%;
+  line-height: 1.5em;
+  max-height: 100%;
+
+  @include media-breakpoint-down(md) {
+    -webkit-line-clamp: 2;
+  }
+}

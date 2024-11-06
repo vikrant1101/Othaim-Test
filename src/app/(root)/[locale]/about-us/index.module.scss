@@ -1,0 +1,52 @@
+@import '@styles/inc/components';
+.aboutCompany {
+  .gap24 {
+    gap: 0;
+    @include media-breakpoint-down(md) {
+      gap: 24px;
+    }
+  }
+  p:first-child {
+    font-size: 24px;
+    @include media-breakpoint-between(md, xxl) {
+      font-size: 18px !important;
+    }
+  }
+  p:last-child {
+    margin-bottom: 0 !important;
+  }
+  &.descriptionCon {
+    max-width: 90%;
+  }
+}
+.messages {
+  background-color: #f4f4f4;
+}
+.ourMission {
+  height: 100%;
+  .maxWidth {
+    max-width: 654px;
+  }
+  .gap32 {
+    gap: 0;
+    @include media-breakpoint-down(md) {
+      gap: 32px;
+    }
+  }
+  .careerCon {
+    display: none;
+  }
+}
+.visionValue {
+  .gap24 {
+    gap: 0;
+    @include media-breakpoint-down(md) {
+      gap: 24px;
+    }
+  }
+  .gapMd24 {
+    @include media-breakpoint-down(md) {
+      gap: 24px;
+    }
+  }
+}

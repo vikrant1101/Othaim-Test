@@ -1,0 +1,64 @@
+@import '@styles/inc/components';
+
+body {
+  .searchCons {
+    background-color: #f4f4f4;
+    padding: 24px;
+    margin-bottom: 48px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 24px;
+    }
+    .gap30 {
+      @include media-breakpoint-down(md) {
+        gap: 30px;
+      }
+      .gap20 {
+        @include media-breakpoint-down(md) {
+          gap: 20px;
+        }
+      }
+    }
+    
+  }
+  .innerPanel {
+    @include media-breakpoint-down(md) {
+      flex-flow: column;
+    }
+    .inputPanel {
+      flex: 1;
+    }
+    .searchBtn{
+      min-width: 110px;
+    }
+  }
+  .filterPanel {
+    margin-bottom: 48px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 24px;
+      flex-flow: column;
+    }
+  }
+  .filterInnerPanel {
+    max-width: 340px;
+    width: 100%;
+    @include media-breakpoint-down(md) {
+      max-width: 100%;
+    }
+  }
+  .descriptionBox {
+    font-weight: 600 !important;
+  }
+  .datePick{
+    position: relative;
+    &::after {
+      content: "\e820";
+      position: absolute;
+      right:22px;
+      top: 22px;
+      font-family: "fontello";
+      color: $seaGreen;
+      font-size: 16px;
+      pointer-events: none;
+  }
+  }
+}

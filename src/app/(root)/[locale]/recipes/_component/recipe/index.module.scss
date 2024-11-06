@@ -1,0 +1,23 @@
+@import '@styles/inc/components';
+body {
+    .mb{
+        margin-bottom: 24px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .mt{
+        margin-top: 8px;
+    }
+    .cardLinkBlock{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: calc(100% - 12px);
+        width: calc(100% - 12px);
+        z-index: 999;
+        cursor: pointer;
+    }
+}
+

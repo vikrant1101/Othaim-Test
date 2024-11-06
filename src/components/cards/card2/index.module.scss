@@ -1,0 +1,83 @@
+@import '@styles/inc/components';
+
+.careerCon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+
+  @include media-breakpoint-down(md) {
+    height: unset;
+  }
+
+  .badgeTitle {
+    color: #007d39;
+    margin-bottom: 32px;
+    font-weight: 700;
+
+    @include media-breakpoint-down(xl) {
+      margin-bottom: 10px;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 32px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .descriptionCon {
+    max-width: 96%;
+
+    p {
+      margin-bottom: 32px;
+
+      @include media-breakpoint-between(lg, xxl) {
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+
+      @include media-breakpoint-down(xs) {
+        margin-bottom: 15px;
+      }
+
+      b {
+        font-size: 24px;
+        font-weight: normal;
+        line-height: 1.42;
+
+        @include media-breakpoint-between(md, xl) {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .btn {
+    margin-top: 32px !important;
+  }
+
+  h2 {
+    margin-bottom: 32px;
+
+    @include media-breakpoint-down(xl) {
+      margin-bottom: 20px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 10px;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 32px;
+      padding-right: 12px;
+      max-width: 100%;
+    }
+
+    @include media-breakpoint-down(xs) {
+      margin-bottom: 20px;
+    }
+  }
+}

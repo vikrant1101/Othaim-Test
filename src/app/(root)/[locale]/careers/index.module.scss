@@ -1,0 +1,85 @@
+@import '@styles/inc/components';
+.heading {
+  border-inline-end: 1px solid #ddd;
+  p {
+    max-width: 1264px;
+    margin-right: 30px;
+  }
+  @include media-breakpoint-down(lg) {
+    border: none;
+    p {
+      margin-right: 0;
+    }
+  }
+}
+.btn {
+  @include media-breakpoint-down(lg) {
+    margin-top: 24px !important;
+  }
+}
+.bgImage {
+  img {
+    min-height: 260px;
+  }
+}
+.bgColor {
+  background-color: #f4f4f4;
+  .trainig {
+    padding: 96px 0 160px 0;
+    @include media-breakpoint-down(xl) {
+      padding: 48px 0 92px 0;
+    }
+  }
+}
+
+.VisionCard {
+  margin-top: 48px;
+  p {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  @include media-breakpoint-down(md) {
+    margin-top: 32px;
+    gap: 24px;
+  }
+}
+.careers {
+  padding-bottom: 96px;
+  @include media-breakpoint-down(xl) {
+    padding-bottom: 48px;
+  }
+  .bgLightGreen {
+    padding: 76px 0;
+    background-color: #9dc41a;
+    position: relative;
+    margin-top: -76px;
+    .mbCareer {
+      padding: 0 23px;
+    }
+    .btn {
+      margin-top: 24px;
+    }
+    p,
+    h2 {
+      margin-bottom: 24px;
+    }
+    @include media-breakpoint-down(md) {
+      padding: 89px 0;
+    }
+    .brushLeft {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .brushRight {
+      position: absolute;
+      rotate: 180deg;
+      right: 0;
+      bottom: 0;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

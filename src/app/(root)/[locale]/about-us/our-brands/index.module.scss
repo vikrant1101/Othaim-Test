@@ -1,0 +1,67 @@
+@import '@styles/inc/components';
+
+.brandPanel {
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    border: 1px solid #ddd;
+    margin-bottom: 24px;
+    border-left: 4px solid #007D39;
+    height: 100%;
+    @include media-breakpoint-down(md) {
+        border-top: 4px solid  #007D39;
+        border-left: 1px solid #ddd;
+        flex-wrap: wrap;
+    }
+    .brandLeftPanel{
+        display: flex;
+        flex: 0 0 384px;
+        @include media-breakpoint-down(xl) {
+            flex: 0 0 200px;
+        }
+        @include media-breakpoint-down(md) {
+            flex: 0 0 100%;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+        
+    }
+    .brandRightPanel {
+        padding: 56px 48px;
+        border-left: 1px solid #ddd;
+        @include media-breakpoint-down(xl) {
+            padding: 25px;
+        }
+        @include media-breakpoint-down(md) {
+            flex: 0 0 100%;
+            width: 100%;
+        }
+        h3 {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 22px;
+            color:#000;
+            @include media-breakpoint-between(md, lg) {
+                font-size: 24px;
+            }
+        }
+        p{
+            color: #404040;
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            padding: 0;
+            @include media-breakpoint-between(md, lg) {
+                font-size: 16px;
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+.descriptionPanel{
+    margin-bottom: 24px;
+}

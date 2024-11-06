@@ -1,0 +1,55 @@
+@import "@styles/inc/components";
+
+.announcemmentTop {
+    background-color: #F4F4F4;
+    padding: 74px 0 96px;
+    margin-top: -48px;
+
+    @include media-breakpoint-down(md) {
+        margin-top: -72px;
+        padding: 98px 0 96px;
+    }
+
+    .smallText {
+        margin-bottom: 96px;
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 32px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+    }
+
+    .btn {
+        max-width: 126px;
+        margin-left: auto;
+
+        &.btnDesktop {
+            @include media-breakpoint-down(md) {
+                display: none;
+            }
+        }
+
+        &.btnMoblie {
+
+            @include media-breakpoint-up(md) {
+                display: none;
+            }
+
+            @include media-breakpoint-down(md) {
+                margin-top: 32px;
+                margin-left: inherit;
+            }
+        }
+
+    }
+
+    .Title {
+        h2 {
+            margin-bottom: 48px;
+        }
+    }
+}

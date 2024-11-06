@@ -1,0 +1,51 @@
+@import '@styles/inc/components';
+.cardl {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 462px;
+  text-align: start;
+  transition: transform 0.3s ease;
+  position: relative;
+  margin-left:  12px;
+  margin-right:  12px;
+  &.mb{
+    margin-bottom: 24px;
+  }
+  .cardImgCon {
+    position: relative;
+    // &:after {
+    //   content: '';
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   right: 0;
+    //   bottom: 0;
+    //   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+    // }
+  }
+ 
+}
+
+.cardImagel {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cardContentl {
+  padding: 40px;
+  position: absolute;
+  bottom: 0;
+}
+
+.datel {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.titlel {
+  color: #fff;
+  margin-bottom: 24px;
+}

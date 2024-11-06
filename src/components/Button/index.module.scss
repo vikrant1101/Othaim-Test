@@ -1,0 +1,29 @@
+@import '@styles/inc/components';
+
+.btn {
+  cursor: pointer;
+  @include btnStyle;
+  + .btn {
+    margin-left: 0px !important;
+  }
+  &.primary {
+    @include btnprimary;
+  }
+  &.secondary {
+    @include btnSecondary;
+  }
+  &.outline {
+    @include btnOutline;
+  }
+  &.witharrow {
+    @include btnWitharrow;
+  }
+  &.yellow {
+    @include btnyellow;
+  }
+  &[target='_blank'] {
+    &::before {
+      display: none;
+    }
+  }
+}

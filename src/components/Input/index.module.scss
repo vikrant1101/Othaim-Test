@@ -1,0 +1,35 @@
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+
+  .inputLabel {
+    font-weight: 500;
+    color: #000;
+    font-size: 14px;
+  }
+
+  .inputField {
+    margin-top: 8px;
+    padding: 12px 24px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 100px;
+    min-height: 60px;
+    transition: border-color 0.3s;
+
+    &:focus {
+      border-color: #000;
+      outline: none;
+    }
+  }
+
+  .inputError .inputField {
+    border-color: #dc3545;
+  }
+
+  .errorMessage {
+    margin-top: 8px;
+    color: #dc3545;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,7 @@
+@import "./components";
+:root {
+    //Global Color
+    --body-font: var(--font-primary);
+    --dark-grey: $darkGrey;
+    --body-line-height: 1.6rem;
+}

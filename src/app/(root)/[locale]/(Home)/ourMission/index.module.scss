@@ -1,0 +1,57 @@
+@import '@styles/inc/components';
+
+.ourMissionCon {
+  position: relative;
+
+  .bgImageCon {
+
+    img {
+      position: inherit !important;
+    }
+  }
+
+  .ourMissionContentCon {
+    background-color: #f4f4f4;
+
+    @include media-breakpoint-down(md) {
+      background-color: #fff;
+    }
+
+    .ourMissionTop {
+      margin-top: -332px;
+
+      @include media-breakpoint-down(lg) {
+        margin-top: -120px;
+      }
+
+      @include media-breakpoint-down(md) {
+        margin-top: 0;
+      }
+    }
+
+    .aboutCompanyWrp {
+      @include media-breakpoint-down(md) {
+        position: unset;
+      }
+
+      .aboutCompanyCon {
+        background-color: white;
+        max-width: 812px;
+        width: 100%;
+        padding: 60px;
+
+        @include media-breakpoint-down(lg) {
+          padding: 40px;
+        }
+
+        @include media-breakpoint-down(md) {
+          padding: 48px 0;
+        }
+
+        a {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}

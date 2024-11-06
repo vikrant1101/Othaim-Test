@@ -1,0 +1,21 @@
+@import "@styles/inc/components";
+
+.privacyPolicy {
+    padding-top: 32px !important;
+
+    @include media-breakpoint-down(md) {
+        font-size: 36px !important;
+    }
+
+    .contentBox {
+        margin-bottom: 48px;
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 32px;
+        }
+
+        &:last-child {
+            margin-bottom: 0px !important;
+        }
+    }
+}

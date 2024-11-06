@@ -1,0 +1,99 @@
+@import '@styles/inc/components';
+
+.careersBgCon {
+  position: relative;
+
+  .leafImgCon {
+    position: absolute;
+    top: 64px;
+    right: 0;
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+
+  .readLattestMainCon {
+    .btmCard {
+      position: absolute;
+      padding: 48px;
+      background-color: #9dc41a;
+      bottom: 4px;
+      right: -100px;
+
+
+
+      @include media-breakpoint-down(xl) {
+        position: relative;
+        right: 0;
+        padding: 32px;
+      }
+
+      @include media-breakpoint-down(md) {
+        position: relative;
+      }
+
+      .btmCardInfo {
+        h4 {
+          margin: 0;
+
+          @include media-breakpoint-between(lg, xl) {
+            font-size: 24px;
+          }
+        }
+
+        max-width: 368px;
+        width: 100%;
+      }
+    }
+
+    .careerCon {
+      max-width: 596px;
+      height: 100%;
+      margin: auto 60px auto auto;
+
+      @include media-breakpoint-down(lg) {
+        margin: 0;
+      }
+
+      @include media-breakpoint-down(md) {
+        max-width: unset;
+        margin-top: 48px;
+        height: unset;
+      }
+
+      a {
+        margin-top: 0 !important;
+      }
+
+      h2 {
+        max-width: 75%;
+
+        @include media-breakpoint-down(md) {
+          max-width: 95%;
+        }
+      }
+    }
+
+    .imageCon {
+      position: relative;
+      margin-inline-end: 109px;
+
+      @include media-breakpoint-down(xl) {
+        margin-inline-end: 75px;
+      }
+
+      @include media-breakpoint-down(lg) {
+        margin-inline-end: 15px;
+      }
+
+      @include media-breakpoint-down(md) {
+        margin-inline-end: 0;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

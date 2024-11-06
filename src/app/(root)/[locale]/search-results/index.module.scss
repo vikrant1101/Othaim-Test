@@ -1,0 +1,10 @@
+@import "@styles/inc/components";
+
+.searchResults {
+    padding-top: 32px !important;
+    .contain{
+        @include media-breakpoint-down(lg) {
+           flex-wrap: wrap;
+        }
+    }
+}

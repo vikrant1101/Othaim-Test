@@ -1,0 +1,62 @@
+@import '@styles/inc/components';
+
+.InnerBanner {
+  background-color: #9dc41a;
+  position: relative;
+  overflow: hidden;
+
+  &.yellowBadge {
+    background-color: yellow;
+    /* Custom style for yellowBadge */
+    padding: 10px;
+    /* Additional styles can be added here */
+  }
+
+  .InnerBannerImg {
+    position: relative;
+
+    &::before {
+      content: '';
+      background-image: url('/img/Leaf-green.png');
+      position: absolute;
+      right: 0;
+      width: 358px;
+      height: 100%;
+      bottom: 0;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: bottom;
+
+      @include media-breakpoint-down(md) {
+        width: 198px;
+        right: -24px;
+      }
+    }
+
+    .InnerBannerText {
+      padding: 68px 0;
+
+      @include media-breakpoint-down(md) {
+        padding: 68px 0 75px;
+      }
+
+      h1 {
+        margin-bottom: 0;
+      }
+    }
+
+    .leafImg {
+      min-height: 100%;
+      display: flex;
+      align-items: flex-end;
+      margin-inline-start: auto;
+      justify-content: end;
+
+      img {
+        @include media-breakpoint-down(md) {
+          margin-right: -25px;
+        }
+      }
+    }
+  }
+}

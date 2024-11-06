@@ -1,0 +1,51 @@
+@import "@styles/inc/components";
+
+.tilesTop {
+    background-color: #007D39;
+    padding: 32px;
+
+    @include media-breakpoint-between(lg, lgmd) {
+        padding: 20px;
+    }
+
+    @include media-breakpoint-between(md, lg) {
+        margin-top: 16px;
+    }
+
+    @include media-breakpoint-down(md) {
+        display: flex;
+        gap: 16px;
+        margin-top: 16px;
+    }
+
+    h6 {
+        color: #fff;
+        margin: 0;
+
+        @include media-breakpoint-between(lg, lgmd) {
+            font-size: 18px;
+        }
+
+        @include media-breakpoint-down(md) {
+            font-size: 20px;
+        }
+    }
+
+    p {
+        color: #fff;
+        margin: 0 0 16px;
+
+        @include media-breakpoint-between(lg, lgmd) {
+            margin: 0 0 10px;
+
+        }
+
+        @include media-breakpoint-between(md, lg) {
+            font-size: 18px;
+        }
+
+        @include media-breakpoint-down(md) {
+            margin: 0;
+        }
+    }
+}

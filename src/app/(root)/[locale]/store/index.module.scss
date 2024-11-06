@@ -1,0 +1,29 @@
+@import '@styles/inc/components';
+.storeHeadingCon {
+  background-color: white;
+  width: 100%;
+  margin-bottom: 48px;
+  margin-top: 32px;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 32px;
+    margin-top: 24px;
+
+  }
+
+  h2 {
+    margin-bottom: 32px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 20px;
+    }
+  }
+  .description {
+    color: #007d39;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .paraGraph {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+

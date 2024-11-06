@@ -1,0 +1,61 @@
+@import '@styles/inc/components';
+
+.breadcrumbWrapper {
+  padding: 12px 0;
+  border-top: 1px solid #ddd;
+  @media print {
+    display: none;
+  }
+
+  .breadcrumbNav {
+    display: flex;
+    gap: 23px;
+    li {
+     
+      position: relative;
+     
+      @include media-breakpoint-between(md, lg) {
+        font-size: 14px;
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: 14px;
+      }
+      &:before {
+        content: '\E805';
+        font-family:var(--font-fontello);
+        position: absolute;
+        font-size: 9px;
+        line-height: 1;
+        color: #404040;
+        left: -15px;
+        top: 55%;
+        @include transvalue(transform, translateY(-50%));
+      }
+      &:first-child {
+        &:before {
+          display: none;
+        }
+      }
+      
+      a {
+        text-transform: capitalize;
+        font-size: 16px;
+        @include media-breakpoint-between(md, lg) {
+          font-size: 14px;
+        }
+        @include media-breakpoint-down(sm) {
+          font-size: 14px;
+        }
+        .menuItemText {
+          color: #007d39;
+        }
+        .menuItemGrey {
+          color: #404040;
+        }
+        &:focus {
+          color: $black;
+        }
+      }
+    }
+  }
+}

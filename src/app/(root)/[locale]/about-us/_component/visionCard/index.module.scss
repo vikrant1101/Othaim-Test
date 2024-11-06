@@ -1,0 +1,52 @@
+@import '@styles/inc/components';
+
+.InnerBannerImg {
+  padding-inline-start: 33px;
+  padding-inline-end: 0;
+  padding-block-start: 48px;
+  padding-block-end: 48px;
+  height: 100%;
+  margin: 0 !important;
+  @include media-breakpoint-down(md) {
+    padding-inline-start: 8px;
+    padding-inline-end: 0;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
+  }
+  img {
+    width: 112px;
+    height: 128px;
+    @include media-breakpoint-down(xl) {
+      width: 94px;
+      height: 112px;
+    }
+    @include media-breakpoint-down(md) {
+      width: 84px;
+      height: 96px;
+    }
+  }
+  &.lightgreen {
+    background-color: #9dc41a;
+    p,
+    h2 {
+      color: #000;
+    }
+  }
+  &.green {
+    background-color: #007d39;
+    p,
+    h2 {
+      color: white;
+    }
+  }
+  .InnerBannerText {
+    h2 {
+      margin-bottom: 24px;
+    }
+    p {
+      font-size: 24px;
+
+      margin-bottom: 0;
+    }
+  }
+}

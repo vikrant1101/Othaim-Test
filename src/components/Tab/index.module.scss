@@ -1,0 +1,38 @@
+@import '@styles/inc/components';
+.mainTabPanel{
+    margin: 0;
+    padding: 0;
+    .tabContent{
+        gap: 16px;
+        display: flex;
+        border-bottom: 1px solid $lightGrey;
+        margin-bottom: 48px;
+        padding-bottom: 32px;
+        @include media-breakpoint-down(xl) {
+            margin:0px 0px 32px 0px;
+        }
+        .tabButton{
+            background: #eee;
+            border-radius: 30px;
+            color: $black;
+            font-weight: 400;
+            border: 1px solid transparent;
+            padding: 14px 24px;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            @include media-breakpoint-down(md) {
+                flex: 0 0 100%;
+                margin: 0 auto;
+            }
+            &:hover, &.active {
+                color: $seaGreen;
+                border-color: $seaGreen;
+                
+            }
+            &.active{
+                font-weight: 600;
+            }
+        }
+    }
+    
+}
