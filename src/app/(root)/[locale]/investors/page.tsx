@@ -53,7 +53,7 @@ const Investors = async ({ params: { locale } }: InvestorsProps) => {
                 </div>
             </div>
 
-            <div className={Styles.announcemmentTop}>
+            <div className={`${Styles.announcemmentTop} announcemmentTop`}>
                 <div className="containerXL">
                     <div className="rowFlex">
                         <div className="columnMd12">
