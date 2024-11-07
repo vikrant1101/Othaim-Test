@@ -49,7 +49,7 @@ const Investors = async ({ params: { locale } }: InvestorsProps) => {
             <div className="containerXL">
                 <div className="rowFlex rowGutters12">
                     <Tiles tilesData={tilesData?.items} />
-                    {/* <ShareInformation stockInfo={stockInfo} /> */}
+                    <ShareInformation stockInfo={stockInfo} />
                 </div>
             </div>
 
